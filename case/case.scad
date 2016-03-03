@@ -40,7 +40,7 @@ topclip_height = 30;
 
 module mountinghole() {
   mountinghole_d = 2.2;
-  mountinghole_head_d = 3.8;
+  mountinghole_head_d = 3.9;
   mountinghole_head_height = 1.2;
   cylinder(d1 = mountinghole_head_d, d2 = mountinghole_d, h = mountinghole_head_height);
   translate([0, 0, mountinghole_head_height]) cylinder(d = mountinghole_d, h = 10);
@@ -148,7 +148,7 @@ module bottomplate() {
   module tripod_hole() {
     x = 72.5;
     y = 0;
-    d = 6;
+    d = 7;
     translate([camera_inset, 0, 0])
       translate([x, y, -5]) cylinder(d = d, h = 10);
   }
